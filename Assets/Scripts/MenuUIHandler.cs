@@ -40,9 +40,4 @@ public class MenuUIHandler : MonoBehaviour
 #endif
     }
 
-    public void BackToMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
-
 }
