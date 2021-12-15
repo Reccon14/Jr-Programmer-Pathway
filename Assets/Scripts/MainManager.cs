@@ -9,6 +9,7 @@ public class MainManager : MonoBehaviour
 
 
     public Color teamColor;
+    public Color savedTeamColor;
 
 
     private void Awake()
@@ -33,6 +34,7 @@ public class MainManager : MonoBehaviour
     {
         SaveData data = new SaveData();
         data.teamcolor = teamColor;
+        savedTeamColor = data.teamcolor;
 
         string json = JsonUtility.ToJson(data);
 
